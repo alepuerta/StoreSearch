@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8459B8401BBD3CD9000372C7 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8459B83F1BBD3CD9000372C7 /* LoadingCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8465CDB41BB40F2200CA7B30 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8465CDB31BB40F2200CA7B30 /* SearchResultCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8465CDB61BB42EFB00CA7B30 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465CDB51BB42EFB00CA7B30 /* SearchResultCell.swift */; settings = {ASSET_TAGS = (); }; };
 		8465CDB81BB4357C00CA7B30 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8465CDB71BB4357C00CA7B30 /* NothingFoundCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8459B83F1BBD3CD9000372C7 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		8465CDB31BB40F2200CA7B30 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		8465CDB51BB42EFB00CA7B30 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		8465CDB71BB4357C00CA7B30 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				848837F01BB2C9DE009ED783 /* Assets.xcassets */,
 				848837F51BB2C9DE009ED783 /* Info.plist */,
 				848837F21BB2C9DE009ED783 /* LaunchScreen.storyboard */,
+				8459B83F1BBD3CD9000372C7 /* LoadingCell.xib */,
 				848837ED1BB2C9DE009ED783 /* Main.storyboard */,
 				8465CDB31BB40F2200CA7B30 /* SearchResultCell.xib */,
 				8465CDB71BB4357C00CA7B30 /* NothingFoundCell.xib */,
@@ -242,6 +245,7 @@
 			files = (
 				848837F41BB2C9DE009ED783 /* LaunchScreen.storyboard in Resources */,
 				848837F11BB2C9DE009ED783 /* Assets.xcassets in Resources */,
+				8459B8401BBD3CD9000372C7 /* LoadingCell.xib in Resources */,
 				8465CDB41BB40F2200CA7B30 /* SearchResultCell.xib in Resources */,
 				8465CDB81BB4357C00CA7B30 /* NothingFoundCell.xib in Resources */,
 				848837EF1BB2C9DE009ED783 /* Main.storyboard in Resources */,
