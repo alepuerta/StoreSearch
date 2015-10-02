@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StoreSearch/SearchViewController.swift"
-            timestampString = "465481756.516172"
+            timestampString = "465485863.013238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
-            landmarkName = "searchBarSearchButtonClicked(_:)"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
+            landmarkName = "performSearch()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
