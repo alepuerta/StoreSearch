@@ -18,6 +18,7 @@
 		848837FF1BB2C9DE009ED783 /* StoreSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848837FE1BB2C9DE009ED783 /* StoreSearchTests.swift */; };
 		8488380A1BB2C9DE009ED783 /* StoreSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848838091BB2C9DE009ED783 /* StoreSearchUITests.swift */; };
 		848838181BB3FCD6009ED783 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848838171BB3FCD6009ED783 /* SearchResult.swift */; settings = {ASSET_TAGS = (); }; };
+		848DAE2B1BC26F9600F564F8 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DAE2A1BC26F9600F564F8 /* UIImageView+DownloadImage.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		848838091BB2C9DE009ED783 /* StoreSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSearchUITests.swift; sourceTree = "<group>"; };
 		8488380B1BB2C9DE009ED783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848838171BB3FCD6009ED783 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		848DAE2A1BC26F9600F564F8 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				848838171BB3FCD6009ED783 /* SearchResult.swift */,
 				848837EB1BB2C9DE009ED783 /* SearchViewController.swift */,
 				8465CDB51BB42EFB00CA7B30 /* SearchResultCell.swift */,
+				848DAE2A1BC26F9600F564F8 /* UIImageView+DownloadImage.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				848838181BB3FCD6009ED783 /* SearchResult.swift in Sources */,
 				8465CDB61BB42EFB00CA7B30 /* SearchResultCell.swift in Sources */,
 				848837EA1BB2C9DE009ED783 /* AppDelegate.swift in Sources */,
+				848DAE2B1BC26F9600F564F8 /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

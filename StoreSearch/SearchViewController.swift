@@ -140,19 +140,19 @@ class SearchViewController: UIViewController  {
     func parseTrack(dictionary: [String: AnyObject]) -> SearchResult {
         let searchResult = SearchResult()
         
-        searchResult.name          = dictionary["trackName"] as! String
-        searchResult.artistName    = dictionary["artistName"] as! String
-        searchResult.artworkURL60  = dictionary["artworkUrl60"] as! String
-        searchResult.artworkURL100 = dictionary["artworkUrl100"] as! String
-        searchResult.storeURL      = dictionary["trackViewUrl"] as! String
-        searchResult.kind          = dictionary["kind"] as! String
-        searchResult.currency      = dictionary["currency"] as! String
+        searchResult.name = dictionary["trackName"] as! NSString as String
+        searchResult.artistName = dictionary["artistName"] as! NSString as String
+        searchResult.artworkURL60 = dictionary["artworkUrl60"] as! NSString as String
+        searchResult.artworkURL100 = dictionary["artworkUrl100"] as! NSString as String
+        searchResult.storeURL = dictionary["trackViewUrl"] as! NSString as String
+        searchResult.kind = dictionary["kind"] as! NSString as String
+        searchResult.currency = dictionary["currency"] as! NSString as String
         
         if let price = dictionary["trackPrice"] as? NSNumber {
-            searchResult.price     = Double(price)
+            searchResult.price = Double(price)
         }
-        if let genre = dictionary["primaryGenreName"] as? String {
-            searchResult.genre     = genre
+        if let genre = dictionary["primaryGenreName"] as? NSString {
+            searchResult.genre = genre as String
         }
         
         return searchResult
@@ -219,21 +219,7 @@ class SearchViewController: UIViewController  {
         return searchResult
     }
     
-    func kindForDisplay(kind: String) -> String {
-        switch kind {
-            case "album":           return "Album"
-            case "audiobook":       return "Audio Book"
-            case "book":            return "Book"
-            case "ebook":           return "E-Book"
-            case "feature-movie":   return "Movie"
-            case "music-video":     return "Music Video"
-            case "podcast":         return "Podcast"
-            case "software":        return "App"
-            case "song":            return "Song"
-            case "tv-episode":      return "TV Episode"
-            default:                return kind
-        }
-    }
+   
 }
 
 extension SearchViewController: UISearchBarDelegate {
@@ -257,7 +243,7 @@ extension SearchViewController: UISearchBarDelegate {
             let session = NSURLSession.sharedSession()
             dataTask = session.dataTaskWithURL(url, completionHandler: { data, response, error in
             
-                print("On the main thread? " + (NSThread.currentThread().isMainThread ? "Yes" : "No"))
+//                print("On the main thread? " + (NSThread.currentThread().isMainThread ? "Yes" : "No"))
                 
                 if let error = error {
                     print("Failure! \(error)")
@@ -325,12 +311,7 @@ extension SearchViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifiers.searchResultCell, forIndexPath: indexPath) as! SearchResultCell
             
             let searchResult = searchResults[indexPath.row]
-            cell.nameLabel.text = searchResult.name
-            if searchResult.artistName.isEmpty {
-                cell.artistNameLabel.text = "Unknown"
-            } else {
-                cell.artistNameLabel.text = String(format: "%@ (%@)", searchResult.artistName, kindForDisplay(searchResult.kind))
-            }
+            cell.configureForSearchResult(searchResult)
             
             return cell
         }
