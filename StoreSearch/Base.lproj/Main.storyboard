@@ -76,11 +76,130 @@
                         <outlet property="searchBar" destination="oEg-tu-3cB" id="0ir-04-leS"/>
                         <outlet property="segmentedControl" destination="fjo-jj-qqA" id="R4V-Hz-omx"/>
                         <outlet property="tableView" destination="CTu-4S-c2R" id="Tyb-aB-bWk"/>
+                        <segue destination="JIj-6K-GQ8" kind="presentation" identifier="ShowDetail" id="8wX-C8-YiW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="452" y="474"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="v07-2c-Vxo">
+            <objects>
+                <viewController id="JIj-6K-GQ8" customClass="DetailViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdC-bt-Xxr"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4Y-pZ-y0r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cle-Fq-zo7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-YA-fBc" userLabel="Pop-up View">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DZ-wo-qFJ" userLabel="Close Button">
+                                        <rect key="frame" x="3" y="0.0" width="26" height="22"/>
+                                        <animations/>
+                                        <state key="normal" image="CloseButton"/>
+                                        <connections>
+                                            <action selector="close" destination="JIj-6K-GQ8" eventType="touchUpInside" id="Oss-ck-7bc"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAs-dk-LWK">
+                                        <rect key="frame" x="70" y="9" width="100" height="100"/>
+                                        <animations/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-aK-27q">
+                                        <rect key="frame" x="10" y="115" width="220" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plc-U8-Glv">
+                                        <rect key="frame" x="10" y="142" width="220" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjC-zD-8cd">
+                                        <rect key="frame" x="10" y="190" width="52" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kind Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9v-0l-OrM">
+                                        <rect key="frame" x="70" y="166" width="166" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-en-mjo">
+                                        <rect key="frame" x="70" y="190" width="160" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQN-uV-OXh">
+                                        <rect key="frame" x="165" y="210" width="69" height="24"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="gEX-0d-2bo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <state key="normal" title="$9.99" backgroundImage="PriceButton"/>
+                                        <connections>
+                                            <action selector="openInStore" destination="JIj-6K-GQ8" eventType="touchUpInside" id="Jkp-Sa-bv6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRW-of-RUE">
+                                        <rect key="frame" x="10" y="166" width="52" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="CEB-Gg-gPN"/>
+                                    <constraint firstAttribute="trailing" secondItem="pQN-uV-OXh" secondAttribute="trailing" constant="6" id="HpO-Hi-QBn"/>
+                                    <constraint firstAttribute="width" constant="240" id="XK5-G6-D6F"/>
+                                    <constraint firstAttribute="bottom" secondItem="pQN-uV-OXh" secondAttribute="bottom" constant="6" id="bnx-bV-Png"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SNP-YA-fBc" firstAttribute="centerY" secondItem="Cle-Fq-zo7" secondAttribute="centerY" id="7P3-S3-n3S"/>
+                            <constraint firstItem="SNP-YA-fBc" firstAttribute="centerX" secondItem="Cle-Fq-zo7" secondAttribute="centerX" id="YBd-oS-0la"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="Plc-U8-Glv" id="flE-fC-baU"/>
+                        <outlet property="artworkImageView" destination="KAs-dk-LWK" id="AeD-yu-N32"/>
+                        <outlet property="genreLabel" destination="0CG-en-mjo" id="0FZ-p2-Jrl"/>
+                        <outlet property="kindLabel" destination="j9v-0l-OrM" id="Jft-Fh-TXg"/>
+                        <outlet property="nameLabel" destination="eVY-aK-27q" id="FO4-ZE-ZS8"/>
+                        <outlet property="popupView" destination="SNP-YA-fBc" id="4my-gq-rFG"/>
+                        <outlet property="priceButton" destination="pQN-uV-OXh" id="R0S-cm-DSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3v-3w-Bac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="474"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="CloseButton" width="15" height="15"/>
+        <image name="PriceButton" width="11" height="24"/>
+    </resources>
 </document>
