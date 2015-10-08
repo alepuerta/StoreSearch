@@ -83,6 +83,38 @@
             </objects>
             <point key="canvasLocation" x="452" y="474"/>
         </scene>
+        <!--Landscape View Controller-->
+        <scene sceneID="ofU-JL-dEF">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeViewController" id="XaR-Ag-kvi" customClass="LandscapeViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ysx-5C-3GF"/>
+                        <viewControllerLayoutGuide type="bottom" id="NCh-9k-P0J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W17-jx-1oi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We're in landscape" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgw-i8-a7V">
+                                <rect key="frame" x="227" y="290" width="145" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kgw-i8-a7V" firstAttribute="centerY" secondItem="W17-jx-1oi" secondAttribute="centerY" id="Mg5-ak-wYz"/>
+                            <constraint firstItem="Kgw-i8-a7V" firstAttribute="centerX" secondItem="W17-jx-1oi" secondAttribute="centerX" id="bMQ-t7-lui"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fsi-BZ-UP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="1163"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="v07-2c-Vxo">
             <objects>

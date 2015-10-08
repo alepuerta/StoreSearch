@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8431331D1BC54AAB0028A430 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431331C1BC54AAB0028A430 /* SlideOutAnimationController.swift */; settings = {ASSET_TAGS = (); }; };
+		8431331F1BC54EC20028A430 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431331E1BC54EC20028A430 /* LandscapeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		843133211BC67E160028A430 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133201BC67E160028A430 /* FadeOutAnimationController.swift */; settings = {ASSET_TAGS = (); }; };
 		8459B8401BBD3CD9000372C7 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8459B83F1BBD3CD9000372C7 /* LoadingCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8465CDB41BB40F2200CA7B30 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8465CDB31BB40F2200CA7B30 /* SearchResultCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8465CDB61BB42EFB00CA7B30 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465CDB51BB42EFB00CA7B30 /* SearchResultCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		8431331C1BC54AAB0028A430 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
+		8431331E1BC54EC20028A430 /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		843133201BC67E160028A430 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 		8459B83F1BBD3CD9000372C7 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		8465CDB31BB40F2200CA7B30 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		8465CDB51BB42EFB00CA7B30 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				848CDD411BC5377A00393A33 /* GradientView.swift */,
 				848CDD431BC541D300393A33 /* BounceAnimationController.swift */,
 				8431331C1BC54AAB0028A430 /* SlideOutAnimationController.swift */,
+				8431331E1BC54EC20028A430 /* LandscapeViewController.swift */,
+				843133201BC67E160028A430 /* FadeOutAnimationController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -289,9 +295,11 @@
 			files = (
 				848837EC1BB2C9DE009ED783 /* SearchViewController.swift in Sources */,
 				84E953631BC3C33F008230C4 /* DimmingPresentationController.swift in Sources */,
+				843133211BC67E160028A430 /* FadeOutAnimationController.swift in Sources */,
 				848838181BB3FCD6009ED783 /* SearchResult.swift in Sources */,
 				8465CDB61BB42EFB00CA7B30 /* SearchResultCell.swift in Sources */,
 				848CDD441BC541D300393A33 /* BounceAnimationController.swift in Sources */,
+				8431331F1BC54EC20028A430 /* LandscapeViewController.swift in Sources */,
 				848DAE2D1BC2B4D800F564F8 /* DetailViewController.swift in Sources */,
 				848837EA1BB2C9DE009ED783 /* AppDelegate.swift in Sources */,
 				848CDD421BC5377A00393A33 /* GradientView.swift in Sources */,
