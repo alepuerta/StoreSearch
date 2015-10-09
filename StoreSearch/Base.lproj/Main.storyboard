@@ -98,10 +98,16 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hn5-4V-v6X">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="XaR-Ag-kvi" id="0ZZ-cK-qnV"/>
+                                </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Z7-pl-ziD">
                                 <rect key="frame" x="275" y="450" width="39" height="37"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="XaR-Ag-kvi" eventType="valueChanged" id="3XP-dJ-WsT"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <animations/>
