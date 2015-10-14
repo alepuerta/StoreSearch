@@ -109,6 +109,10 @@ class SearchViewController: UIViewController  {
                     controller.view.removeFromSuperview()
                     controller.removeFromParentViewController()
                     self.landscapeViewController = nil
+                    
+                    if self.presentedViewController != nil {
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    }
                 }
             )
             
@@ -144,6 +148,11 @@ extension SearchViewController: UISearchBarDelegate {
             search.performSearchForText(searchBar.text!,
                 category: category,
                 completion: { success in
+                    
+                    if let controller = self.landscapeViewController {
+                        controller.searchResultsReceived()
+                    }
+                    
                     if !success {
                         self.showNetworkError()
                     }
